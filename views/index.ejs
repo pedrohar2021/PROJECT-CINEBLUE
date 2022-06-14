@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CINEART BLUE</title>
+    <link rel="icon"  type="image/jpg"  href="https://png.pngtree.com/element_pic/16/12/07/ba843866a2fa342be89aad89bf9fef33.jpg" />
+</head>
+<body>
+
+
+    <header>
+        <nav>
+            
+            <ul>
+                <li> <a href="/">HOME</a></li>
+                <li> <a href="/cadastro">CADASTRO</a></li>
+            </ul>
+        
+    
+        </nav>
+        
+        <section id="escrita">
+            <img id="pokedex" src="/img/cineblue.png" alt="">
+        </section>
+
+    <div id="branco">
+
+    </div>
+    
+    
+    
+</header>
+
+<main>
+
+    <h1>FILMES EM CARTAZ</h1>
+
+
+    <section id="cards">
+        
+            
+            <% meusFilmes.forEach((filmes) => { %>
+                <div class="card"> <a href="/detalhes/<%= filmes.id %>">
+                    <img src="<%= filmes.imagem %>" alt="">
+                    <h3><%= filmes.nome %></h3>
+                </a></div>
+                <% }) %>
+            </section>
+            
+            <% if(mensagem != ""){ %>
+                <section id="mensagem">
+                    <span id="close">&times;</span><p> <%=mensagem %> </p> <span id="close2">&times;</span>
+                </section>
+                <% } %>
+
+
+            
+        
+    </main>
+
+    <footer>
+
+        <p>Todos os direitos reservados @pedroreezende | Dados retirados de <a target="_blank" href="https://www.cineart.com.br/">CineArt</a></p>
+    </footer>
+    
+<script src="/script.js"></script>
+</body>
+</html>

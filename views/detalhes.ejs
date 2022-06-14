@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/detalhes.css" />
+    <title>DETALHES FILME</title>
+    <link rel="icon"  type="image/jpg"  href="https://png.pngtree.com/element_pic/16/12/07/ba843866a2fa342be89aad89bf9fef33.jpg" />
+  </head>
+
+  <header>
+    <nav>
+        
+        <ul>
+            <li> <a href="/">HOME</a></li>
+            <li> <a href="/cadastro">CADASTRO</a></li>
+        </ul>
+    
+
+    </nav>
+    
+    <section id="escrita">
+        <img id="pokedex" src="/img/cineblue.png" alt="">
+    </section>
+
+<div id="branco">
+
+</div>
+
+
+
+</header>
+
+<main>
+  <section id="faixa-titulo">
+    <h1>DETALHES</h1>
+  </section>
+  
+      <section id="detalhes-produtos">
+        <div class="imagem-produto">
+          <img src= "<%= detalhesSelecionado.imagem %>" alt="imagem-produto" />
+        </div>
+
+      </section>
+
+      <section id="infos">
+      
+        <h2 id="titulo"><%= detalhesSelecionado.nome %></h2>
+        <p class="infos"><%= detalhesSelecionado.tipo %></p>
+        <p class="infos"><%= detalhesSelecionado.descricao %></p>
+      </section>
+      
+    </main>
+    <footer>
+
+       <p>Todos os direitos reservados @pedroreezende | Dados retirados de <a target="_blank" href="https://www.cineart.com.br/">CineArt</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>

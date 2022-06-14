@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>CADASTRO FILME</title>
+    <link rel="icon"  type="image/jpg"  href="https://png.pngtree.com/element_pic/16/12/07/ba843866a2fa342be89aad89bf9fef33.jpg" />
+</head>
+<body>
+    
+    <header>
+        <nav>
+            
+            <ul>
+                <li> <a href="/">HOME</a></li>
+                <li> <a href="/cadastro">CADASTRO</a></li>
+            </ul>
+        
+    
+        </nav>
+        
+        <section id="escrita">
+            <img id="pokedex" src="/img/cineblue.png" alt="">
+        </section>
+
+    <div id="branco">
+
+    </div>
+    
+    
+    
+</header>
+    
+    <main>
+        
+    
+        <section id="cadastro">
+            
+            <h1>CADASTRAR FILME</h1>
+            
+            <form action="/create" method="POST">
+                
+                <label for="nome">TÍTULO: </label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="descricao">DESCRIÇÃO: </label>
+                <input type="text" id="descricao" name="descricao" required>
+
+                <label for="tipo">TIPO: </label>
+                <input type="text" id="tipo" name="tipo" required>
+
+                <label for="imagem" id="link">LINK DA CAPA DO FILME: </label>
+                <input type="text" id="imagem" name="imagem" required>
+
+                <button id="btnCadastrar" type="submit">+</button >
+
+
+
+
+            </form>
+            
+        
+        </section>
+    </main>
+
+    <footer>
+
+        <p>Todos os direitos reservados @pedroreezende | Dados retirados de <a target="_blank" href="https://www.cineart.com.br/">CineArt</a></p>
+    </footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
